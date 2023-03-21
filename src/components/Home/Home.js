@@ -57,7 +57,7 @@ const Home = () => {
             </ul>
           </div>
           <div className="text-center mb-4">
-            <button className="border px-2 py-1">
+            <button className="border rounded-md px-2 py-1">
               <Link>CONTACT ME</Link>
             </button>
           </div>
