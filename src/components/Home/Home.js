@@ -5,15 +5,17 @@ import { FaGithub } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import amit from "../../assets/myself-removebg-preview.png";
+import Drawer from "../Drawer/Drawer";
+import Introduction from "../Introduction/Introduction";
 
 const Home = () => {
   return (
     <div className="sm:flex sm:gap-5 md:gap-8 lg:gap-12 mx-5">
-      <div className="sm:sticky rounded-xl border-2 border-blue-300 top-0 sm:top-12 w-full sm:w-64 md:w-72 lg:w-80 h-full ">
+      <div className="sm:sticky rounded-xl border-2 border-blue-300 top-0 sm:top-10 w-full sm:w-64 md:w-72 lg:w-80 h-full ">
         <div className=" p-3  ">
           <div className="">
             <img
-              className="border-2 h-80 w-full border-blue-300  rounded-xl"
+              className="border-2 mb-5 h-72 w-full border-blue-300  rounded-xl"
               src={amit}
               alt=""
             />
@@ -45,7 +47,7 @@ const Home = () => {
                   <FaGithub className="w-8 h-8 "></FaGithub>
                 </a>
               </li>
-              <li className="hover:text-blue-600 transition-all">
+              <li className="hover:text-green-600 transition-all">
                 <a
                   href="https://wa.me/01746889508"
                   target="_blank"
@@ -57,67 +59,24 @@ const Home = () => {
             </ul>
           </div>
           <div className="text-center mb-4">
-            <button className="border rounded-md px-2 py-1">
+            <button className="border rounded-md px-2 py-1 bg-blue-200 font-semibold  text-gray-800">
               <Link>CONTACT ME</Link>
             </button>
           </div>
         </div>
       </div>
-      <div className="">
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
-        <h1>right side</h1>
+      <div className=" mt-20 w-full flex justify-around">
+        <div>
+          <div>
+            <h1 className="font-semibold ">Introduce</h1>
+            <div>
+              <Introduction></Introduction>
+            </div>
+          </div>
+        </div>
+        <div>
+          <Drawer></Drawer>
+        </div>
       </div>
     </div>
   );
