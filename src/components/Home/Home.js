@@ -5,17 +5,18 @@ import { FaGithub } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import amit from "../../assets/myself-removebg-preview.png";
-import Drawer from "../Drawer/Drawer";
+import About from "../About/About";
 import Introduction from "../Introduction/Introduction";
+import ProjectShow from "../ProjectShow/ProjectShow";
 
 const Home = () => {
   return (
     <div className="sm:flex sm:gap-5 md:gap-8 lg:gap-12 mx-5">
-      <div className="sm:sticky rounded-xl border-2 border-blue-300 top-0 sm:top-10 w-full sm:w-64 md:w-72 lg:w-80 h-full ">
+      <div className="sm:sticky rounded-xl border-2 border-blue-300 top-2 sm:top-8 md:top-16 w-full sm:w-64 md:w-80 lg:w-96 h-full ">
         <div className=" p-3  ">
           <div className="">
             <img
-              className="border-2 mb-5 h-72 w-full border-blue-300  rounded-xl"
+              className="border-2 mb-5 w-64 h-72 mx-auto border-blue-300  rounded-xl"
               src={amit}
               alt=""
             />
@@ -65,17 +66,20 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className=" mt-20 w-full flex justify-around">
+      <div className=" mt-10 lg:mt-20 w-full  ">
         <div>
           <div>
-            <h1 className="font-semibold ">Introduce</h1>
+            <h1 className="font-semibold w-20 border text-center rounded-lg">
+              Introduce
+            </h1>
             <div>
-              <Introduction></Introduction>
+              <div className="md:flex justify-between">
+                <Introduction></Introduction>
+                <ProjectShow></ProjectShow>
+              </div>
+              <About></About>
             </div>
           </div>
-        </div>
-        <div>
-          <Drawer></Drawer>
         </div>
       </div>
     </div>

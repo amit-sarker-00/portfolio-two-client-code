@@ -3,13 +3,14 @@ import React from "react";
 const Introduction = () => {
   return (
     <div className="">
-      <h1 className="text-7xl mt-20">
+      <h1 className="text-3xl md:text-5xl xl:text-7xl mt-10 lg:mt-20">
         Say Hi from Amit Sarker,
-        <br /> Frontend Developer
+        <br className="sm:block hidden" /> Frontend Developer
       </h1>
       <p className="mt-10">
-        I design and code beautifully simple things and i love what i do.
-        <br /> Just simple like that!
+        I design and code beautifully simple things{" "}
+        <br className="lg:hidden block " /> and i love what i do.
+        <br className="lg:hidden" /> Just simple like that!
       </p>
       <ul className="sm:flex mt-5  gap-5 font-bold ">
         <li className="list-none ">Web Developer</li>
