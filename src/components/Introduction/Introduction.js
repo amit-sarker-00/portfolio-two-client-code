@@ -4,7 +4,7 @@ const Introduction = () => {
   return (
     <div className="">
       <h1 className="text-3xl md:text-5xl xl:text-7xl mt-10 lg:mt-20">
-        Say Hi from Amit Sarker,
+        Say Hi from <span className="text-blue-400">Amit Sarker</span>,
         <br className="sm:block hidden" /> Frontend Developer
       </h1>
       <p className="mt-10">

@@ -8,15 +8,16 @@ import amit from "../../assets/myself-removebg-preview.png";
 import About from "../About/About";
 import Introduction from "../Introduction/Introduction";
 import ProjectShow from "../ProjectShow/ProjectShow";
+import Service from "../Services/Service";
 
 const Home = () => {
   return (
     <div className="sm:flex sm:gap-5 md:gap-8 lg:gap-12 mx-5">
-      <div className="sm:sticky rounded-xl border-2 border-blue-300 top-2 sm:top-8 md:top-16 w-full sm:w-64 md:w-80 lg:w-96 h-full ">
+      <div className="sm:sticky rounded-xl md:border-2 border-blue-300 top-2 sm:top-8 md:top-16 w-full sm:w-64 md:w-80 lg:w-96 h-full ">
         <div className=" p-3  ">
           <div className="">
             <img
-              className="border-2 mb-5 w-64 h-72 mx-auto border-blue-300  rounded-xl"
+              className="md:border-2 border mb-5 w-64 h-72 mx-auto border-blue-300  rounded-xl"
               src={amit}
               alt=""
             />
@@ -78,6 +79,7 @@ const Home = () => {
                 <ProjectShow></ProjectShow>
               </div>
               <About></About>
+              <Service></Service>
             </div>
           </div>
         </div>
