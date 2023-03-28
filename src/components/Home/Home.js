@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import amit from "../../assets/myself-removebg-preview.png";
 import About from "../About/About";
 import Introduction from "../Introduction/Introduction";
+import Myskills from "../Myskills/Myskills";
 import ProjectShow from "../ProjectShow/ProjectShow";
 import Service from "../Services/Service";
 
@@ -80,6 +81,7 @@ const Home = () => {
               </div>
               <About></About>
               <Service></Service>
+              <Myskills></Myskills>
             </div>
           </div>
         </div>
