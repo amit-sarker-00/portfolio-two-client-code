@@ -1,10 +1,8 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
 const Contact = () => {
   const form = useRef();
-  const navigate = useNavigate();
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -20,7 +18,6 @@ const Contact = () => {
           console.log(result);
           if (result.status === 200) {
             toast.success("Email sent Successfully. Thanks for contacting me");
-            navigate("/");
           } else {
             toast.error("Something went wrong. Please try again");
           }
@@ -39,7 +36,6 @@ const Contact = () => {
         <h1 className="text-3xl md:text-5xl xl:text-7xl mt-10 lg:mt-20">
           Let's Work <span className="text-blue-400">Together</span>!
         </h1>
-        <h3 className="mt-8 lg:mt-16 text-3xl">amitsarker255@gmail.com</h3>
         <div className="w-3/4">
           <form ref={form} onSubmit={sendEmail} id="contact">
             <div className="mb-10 mt-10">
