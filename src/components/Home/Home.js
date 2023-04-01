@@ -6,8 +6,10 @@ import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import amit from "../../assets/myself-removebg-preview.png";
 import About from "../About/About";
+import Contact from "../Contact/Contact";
 import Introduction from "../Introduction/Introduction";
 import Myskills from "../Myskills/Myskills";
+import Projects from "../Projects/Projects";
 import ProjectShow from "../ProjectShow/ProjectShow";
 import Service from "../Services/Service";
 
@@ -32,38 +34,41 @@ const Home = () => {
           </div>
           <div className="mt-3 mb-7">
             <ul
-              className="flex items-center gap-2 justify-center text-gray-400 
+              className="flex items-center gap-2 justify-center text-gray-400
 "
             >
-              <li className="hover:text-blue-600 transition-all">
-                <a href="https://www.facebook.com/amit.sarker.581187">
-                  <FaFacebook className="w-8 h-8 "></FaFacebook>
+              <li className="hover:border-blue-400 transition-all  border-2 p-2 rounded-full">
+                <a
+                  className=""
+                  href="https://www.facebook.com/amit.sarker.581187"
+                >
+                  <FaFacebook className=" h-5 w-5 "></FaFacebook>
                 </a>
               </li>
-              <li className="hover:text-blue-600 transition-all">
+              <li className="hover:border-blue-400 transition-all  border-2 p-2 rounded-full">
                 <a href="https://www.linkedin.com/in/amitsarker0/">
-                  <FaLinkedin className="w-8 h-8 "></FaLinkedin>
+                  <FaLinkedin className=" h-5 w-5"></FaLinkedin>
                 </a>
               </li>
-              <li className="hover:text-blue-600 transition-all">
+              <li className="hover:border-blue-600 transition-all p-2 border-2 rounded-full ">
                 <a href="https://github.com/amit-sarker-00">
-                  <FaGithub className="w-8 h-8 "></FaGithub>
+                  <FaGithub className=" h-5 w-5"></FaGithub>
                 </a>
               </li>
-              <li className="hover:text-green-600 transition-all">
+              <li className="hover:border-blue-400 transition-all  border-2 p-2 rounded-full">
                 <a
                   href="https://wa.me/01746889508"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaWhatsapp className="w-8 h-8 "></FaWhatsapp>
+                  <FaWhatsapp className="h-5 w-5 "></FaWhatsapp>
                 </a>
               </li>
             </ul>
           </div>
           <div className="text-center mb-4">
             <button className="border rounded-md px-2 py-1 bg-blue-200 font-semibold  text-gray-800">
-              <Link>CONTACT ME</Link>
+              <a href="#contact">CONTACT ME</a>
             </button>
           </div>
         </div>
@@ -82,6 +87,8 @@ const Home = () => {
               <About></About>
               <Service></Service>
               <Myskills></Myskills>
+              <Projects></Projects>
+              <Contact></Contact>
             </div>
           </div>
         </div>

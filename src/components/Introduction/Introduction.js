@@ -9,8 +9,8 @@ const Introduction = () => {
       </h1>
       <p className="mt-10">
         I design and code beautifully simple things{" "}
-        <br className="lg:hidden block " /> and i love what i do.
-        <br className="lg:hidden" /> Just simple like that!
+        <br className="lg:block hidden " /> and i love what i do. Just simple
+        like that!
       </p>
       <ul className="sm:flex mt-5  gap-5 font-bold ">
         <li className="list-none ">Web Developer</li>
