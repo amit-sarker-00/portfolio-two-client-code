@@ -13,11 +13,11 @@ const About = () => {
           an even <span className="text-blue-400">better story</span>
         </h1>
         <p className="mt-10">
-          Since beginning my journey as a freelance designer nearly 8 years ago,
+          Since beginning my journey as a frontend Developer nearly 1 years ago,
           I've done
-          <br /> remote work for agencies, consulted for startups, and
-          collaborated with
-          <br /> talented people to create digital products for both
+          <br /> multiple projects using Javascript, React, Tailwind CSS,
+          Express JS, MongodDB for database and collaborated with
+          <br /> talented people to create unique Design for both
           <br />
           business and consumer use. I'm quietly confident, naturally curious,
           <br />
